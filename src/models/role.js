@@ -14,6 +14,9 @@ Role.init(
     name: {
       type: DataTypes.STRING,
       unique: true,
+      validate: {
+        isIn: [["Community Admin", "Community Member"]], // Only allow these values
+      },
     },
   },
   { sequelize, modelName: "role", timestamps: true }
