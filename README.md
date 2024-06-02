@@ -37,26 +37,27 @@ nodemon server.js
 
 ### Role
 
-URL
-Create:- POST /v1/role
-Get All:- GET /v1/role
+URL</br>
+Create:- POST /v1/role </br>
+Get All:- GET /v1/role</br></br>
 
 ### User
 
-URL
-Sign Up:- POST /v1/auth/signup
-Sign in:- POST /v1/auth/signin
-Get Me:= GET /v1/auth/me
+URL</br>
+Sign Up:- POST /v1/auth/signup</br>
+Sign in:- POST /v1/auth/signin</br>
+Get Me:= GET /v1/auth/me</br></br>
 
 ### Community
 
 URL
-Create:- POST /v1/community
-Get All:- GET /v1/community
-Get All Members:- GET /v1/community/:id/members
-Get My Owned Community:- GET /v1/community/me/owner
-Get My Joined Community:- GET /v1/community/me/member
-Member
-URL
-Add Member:- POST /v1/member
+Create:- POST /v1/community</br>
+Get All:- GET /v1/community</br>
+Get All Members:- GET /v1/community/:id/members</br>
+Get My Owned Community:- GET /v1/community/me/owner</br>
+Get My Joined Community:- GET /v1/community/me/member</br></br>
+
+### Member</br>
+URL</br>
+Add Member:- POST /v1/member</br>
 Remove Member:- DELETE /v1/member/:id
