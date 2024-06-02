@@ -1,0 +1,22 @@
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../utils/database");
+const Snowflake = require("@theinternetfolks/snowflake").Snowflake;
+
+class Role extends Model {}
+
+Role.init(
+  {
+    id: {
+      type: DataTypes.STRING,
+      primaryKey: true,
+      defaultValue: () => Snowflake.generate().toString(),
+    },
+    name: {
+      type: DataTypes.STRING,
+      unique: true,
+    },
+  },
+  { sequelize, modelName: "role", timestamps: true }
+);
+
+module.exports = Role;
